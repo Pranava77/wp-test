@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Bump this when the bundled page JSON changes so re-uploads refresh the pages.
  */
-define( 'WEBFIXUS_SCAFFOLD_VERSION', '1.0.0' );
+define( 'WEBFIXUS_SCAFFOLD_VERSION', '1.1.0' );
 
 /**
  * Ordered map of slug => page title.

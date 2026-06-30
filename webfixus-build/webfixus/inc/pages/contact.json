@@ -1,34 +1,355 @@
 [
  {
-  "id": "043e95d",
+  "id": "93a8f94",
   "elType": "section",
   "settings": {
-   "layout": "full_width",
-   "gap": "no",
+   "gap": "wide",
+   "layout": "boxed",
+   "content_width": {
+    "unit": "px",
+    "size": 1120,
+    "sizes": []
+   },
    "padding": {
     "unit": "px",
-    "top": "0",
-    "right": "0",
-    "bottom": "0",
-    "left": "0",
-    "isLinked": true
+    "top": "56",
+    "right": "32",
+    "bottom": "72",
+    "left": "32",
+    "isLinked": false
    }
   },
   "elements": [
    {
-    "id": "796f833",
+    "id": "ede7414",
     "elType": "column",
     "settings": {
-     "_column_size": 100,
-     "_inline_size": null
+     "_column_size": 50,
+     "_inline_size": 50
     },
     "elements": [
      {
+      "id": "043e95d",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>/ CONTACT</p>",
+       "text_color": "#6b6557",
+       "align": "left",
+       "typography_typography": "custom",
+       "typography_font_family": "Space Mono",
+       "typography_font_weight": "700",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 13,
+        "sizes": []
+       },
+       "typography_line_height": {
+        "unit": "em",
+        "size": 1.4,
+        "sizes": []
+       },
+       "typography_letter_spacing": {
+        "unit": "px",
+        "size": 1.82,
+        "sizes": []
+       },
+       "_margin": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       }
+      }
+     },
+     {
+      "id": "796f833",
+      "elType": "widget",
+      "widgetType": "heading",
+      "settings": {
+       "title": "LET'S MAKE SOMETHING.",
+       "header_size": "h1",
+       "title_color": "#14110c",
+       "typography_typography": "custom",
+       "typography_font_family": "Archivo",
+       "typography_font_weight": "900",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 66,
+        "sizes": []
+       },
+       "typography_font_size_mobile": {
+        "unit": "px",
+        "size": 44,
+        "sizes": []
+       },
+       "typography_line_height": {
+        "unit": "em",
+        "size": 0.92,
+        "sizes": []
+       },
+       "typography_letter_spacing": {
+        "unit": "px",
+        "size": -1.98,
+        "sizes": []
+       },
+       "_margin": {
+        "unit": "px",
+        "top": "14",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       }
+      }
+     },
+     {
       "id": "8845a27",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<p>Tell me what you're building. I take on a handful of projects a month and reply within a day.</p>",
+       "text_color": "#3a352c",
+       "align": "left",
+       "typography_typography": "custom",
+       "typography_font_family": "Space Grotesk",
+       "typography_font_weight": "400",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 18,
+        "sizes": []
+       },
+       "typography_line_height": {
+        "unit": "em",
+        "size": 1.55,
+        "sizes": []
+       },
+       "_margin": {
+        "unit": "px",
+        "top": "22",
+        "right": "0",
+        "bottom": "28",
+        "left": "0",
+        "isLinked": false
+       }
+      }
+     },
+     {
+      "id": "49cd095",
+      "elType": "widget",
+      "widgetType": "button",
+      "settings": {
+       "text": "hello@webfixus.studio",
+       "link": {
+        "url": "mailto:hello@webfixus.studio",
+        "is_external": "",
+        "nofollow": "",
+        "custom_attributes": ""
+       },
+       "button_text_color": "#14110c",
+       "background_color": "#ffffff",
+       "border_border": "solid",
+       "border_width": {
+        "unit": "px",
+        "top": "2",
+        "right": "2",
+        "bottom": "2",
+        "left": "2",
+        "isLinked": false
+       },
+       "border_color": "#14110c",
+       "text_padding": {
+        "unit": "px",
+        "top": "18",
+        "right": "20",
+        "bottom": "18",
+        "left": "20",
+        "isLinked": false
+       },
+       "button_box_shadow_box_shadow_type": "yes",
+       "button_box_shadow_box_shadow": {
+        "horizontal": 5,
+        "vertical": 5,
+        "blur": 0,
+        "spread": 0,
+        "color": "#14110c"
+       },
+       "typography_typography": "custom",
+       "typography_font_family": "Archivo",
+       "typography_font_weight": "800",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 22,
+        "sizes": []
+       },
+       "align": "left"
+      }
+     },
+     {
+      "id": "b3e2cec",
+      "elType": "section",
+      "settings": {
+       "gap": "no",
+       "layout": "full_width",
+       "background_background": "classic",
+       "background_color": "#ffd23f",
+       "border_border": "solid",
+       "border_width": {
+        "unit": "px",
+        "top": "3",
+        "right": "3",
+        "bottom": "3",
+        "left": "3",
+        "isLinked": false
+       },
+       "border_color": "#14110c",
+       "box_shadow_box_shadow_type": "yes",
+       "box_shadow_box_shadow": {
+        "horizontal": 5,
+        "vertical": 5,
+        "blur": 0,
+        "spread": 0,
+        "color": "#14110c"
+       }
+      },
+      "elements": [
+       {
+        "id": "d5fbe02",
+        "elType": "column",
+        "settings": {
+         "_column_size": 100,
+         "_inline_size": 100,
+         "padding": {
+          "unit": "px",
+          "top": "18",
+          "right": "20",
+          "bottom": "18",
+          "left": "20",
+          "isLinked": false
+         }
+        },
+        "elements": [
+         {
+          "id": "e6c1558",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+           "editor": "<p>AVAILABILITY</p>",
+           "text_color": "#7a6a1f",
+           "align": "left",
+           "typography_typography": "custom",
+           "typography_font_family": "Space Mono",
+           "typography_font_weight": "400",
+           "typography_font_size": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+           },
+           "typography_line_height": {
+            "unit": "em",
+            "size": 1.5,
+            "sizes": []
+           },
+           "typography_letter_spacing": {
+            "unit": "px",
+            "size": 1.2,
+            "sizes": []
+           },
+           "_margin": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           }
+          }
+         },
+         {
+          "id": "9df2974",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+           "title": "Booking from Q3 2026",
+           "header_size": "div",
+           "title_color": "#14110c",
+           "typography_typography": "custom",
+           "typography_font_family": "Archivo",
+           "typography_font_weight": "800",
+           "typography_font_size": {
+            "unit": "px",
+            "size": 22,
+            "sizes": []
+           },
+           "_margin": {
+            "unit": "px",
+            "top": "4",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+           }
+          }
+         }
+        ]
+       }
+      ],
+      "isInner": true
+     },
+     {
+      "id": "a1f84e8",
+      "elType": "widget",
+      "widgetType": "text-editor",
+      "settings": {
+       "editor": "<span style=\"border-bottom:3px solid #2b4cff;padding-bottom:2px\">INSTAGRAM</span> &nbsp; <span style=\"border-bottom:3px solid #ff5a36;padding-bottom:2px\">BEHANCE</span> &nbsp; <span style=\"border-bottom:3px solid #16a06a;padding-bottom:2px\">DRIBBBLE</span>",
+       "text_color": "#14110c",
+       "align": "left",
+       "typography_typography": "custom",
+       "typography_font_family": "Space Mono",
+       "typography_font_weight": "700",
+       "typography_font_size": {
+        "unit": "px",
+        "size": 13,
+        "sizes": []
+       },
+       "typography_line_height": {
+        "unit": "em",
+        "size": 1.5,
+        "sizes": []
+       },
+       "typography_letter_spacing": {
+        "unit": "px",
+        "size": 0.78,
+        "sizes": []
+       },
+       "_margin": {
+        "unit": "px",
+        "top": "16",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+       }
+      }
+     }
+    ]
+   },
+   {
+    "id": "47e8b26",
+    "elType": "column",
+    "settings": {
+     "_column_size": 50,
+     "_inline_size": 50
+    },
+    "elements": [
+     {
+      "id": "211970d",
       "elType": "widget",
       "widgetType": "html",
       "settings": {
-       "html": "<section class=\"wfx-wrap wfx-pad wfx-split\" style=\"max-width:1120px;margin:0 auto;padding:64px 32px 80px;display:grid;grid-template-columns:1fr 1fr;gap:48px\">\n  <div>\n    <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#6b6557\">/ CONTACT</div>\n    <h1 class=\"wfx-h1\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:66px;line-height:.92;letter-spacing:-.03em;margin:14px 0 0\">LET'S MAKE<br>SOMETHING.</h1>\n    <p style=\"font-size:18px;line-height:1.55;color:#3a352c;margin:22px 0 30px;max-width:440px\">Tell me what you're building. I take on a handful of projects a month and reply within a day.</p>\n    <div style=\"display:flex;flex-direction:column;gap:16px\">\n      <a href=\"mailto:hello@webfixus.studio\" class=\"wfx-a\" style=\"display:block;background:#fff;border:3px solid #14110c;box-shadow:5px 5px 0 #14110c;padding:18px 20px\"><div style=\"font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.1em;color:#6b6557\">EMAIL</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin-top:4px\">hello@webfixus.studio</div></a>\n      <div style=\"background:#ffd23f;border:3px solid #14110c;box-shadow:5px 5px 0 #14110c;padding:18px 20px\"><div style=\"font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.1em;color:#7a6a1f\">AVAILABILITY</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin-top:4px\">Booking from Q3 2026</div></div>\n      <div style=\"display:flex;gap:14px;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em\">\n        <span style=\"border-bottom:3px solid #2b4cff;padding-bottom:2px;cursor:pointer\">INSTAGRAM</span>\n        <span style=\"border-bottom:3px solid #ff5a36;padding-bottom:2px;cursor:pointer\">BEHANCE</span>\n        <span style=\"border-bottom:3px solid #16a06a;padding-bottom:2px;cursor:pointer\">DRIBBBLE</span>\n      </div>\n    </div>\n  </div>\n\n  <div>\n    <div id=\"wfx-sent\" style=\"display:none;background:#16a06a;color:#fff;border:3px solid #14110c;box-shadow:8px 8px 0 #14110c;padding:48px 32px;height:100%;box-sizing:border-box;flex-direction:column;justify-content:center\">\n      <div style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.02em\">GOT IT! ✊</div>\n      <p style=\"font-size:17px;line-height:1.5;margin:18px 0 0;color:#dffaec\">Thanks for reaching out. I'll get back to you within one business day — usually sooner.</p>\n      <span id=\"wfx-again\" style=\"cursor:pointer;margin-top:26px;display:inline-block;background:#14110c;color:#fff;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;padding:12px 18px;border:2px solid #fff;width:fit-content\">SEND ANOTHER →</span>\n    </div>\n\n    <form id=\"wfx-form\" style=\"background:#fff;border:3px solid #14110c;box-shadow:8px 8px 0 #14110c;padding:30px\">\n      <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">NAME</label>\n      <input name=\"name\" required placeholder=\"Your name\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;margin-bottom:18px\" />\n      <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">EMAIL</label>\n      <input name=\"email\" type=\"email\" required placeholder=\"you@company.com\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;margin-bottom:18px\" />\n      <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">PROJECT TYPE</label>\n      <select name=\"ptype\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;margin-bottom:18px\">\n        <option>Editorial illustration</option>\n        <option>Character design</option>\n        <option>Brand art / system</option>\n        <option>Mural</option>\n        <option>Something else</option>\n      </select>\n      <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">THE BRIEF</label>\n      <textarea name=\"brief\" rows=\"4\" placeholder=\"What are we making, and when do you need it?\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;resize:vertical;margin-bottom:22px\"></textarea>\n      <button type=\"submit\" style=\"cursor:pointer;display:block;width:100%;text-align:center;background:#2b4cff;color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;padding:15px;border:2px solid #14110c;box-shadow:5px 5px 0 #14110c\">SEND THE BRIEF →</button>\n    </form>\n  </div>\n</section>\n<script>\n(function(){\n  var form = document.getElementById('wfx-form');\n  var sent = document.getElementById('wfx-sent');\n  var again = document.getElementById('wfx-again');\n  if(!form) return;\n  form.addEventListener('submit', function(e){\n    e.preventDefault();\n    var f = form;\n    var subject = 'New brief: ' + (f.ptype.value || 'Project') + ' — ' + (f.name.value || '');\n    var body = 'Name: ' + f.name.value + '\\n'\n             + 'Email: ' + f.email.value + '\\n'\n             + 'Project type: ' + f.ptype.value + '\\n\\n'\n             + f.brief.value;\n    window.location.href = 'mailto:hello@webfixus.studio'\n      + '?subject=' + encodeURIComponent(subject)\n      + '&body=' + encodeURIComponent(body);\n    form.style.display = 'none';\n    sent.style.display = 'flex';\n  });\n  if(again){\n    again.addEventListener('click', function(){\n      sent.style.display = 'none';\n      form.style.display = 'block';\n      form.reset();\n    });\n  }\n})();\n</script>"
+       "html": "<div id=\"wfx-sent\" style=\"display:none;background:#16a06a;color:#fff;border:3px solid #14110c;box-shadow:8px 8px 0 #14110c;padding:48px 32px;box-sizing:border-box;flex-direction:column;justify-content:center\">\n  <div style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.02em\">GOT IT! ✊</div>\n  <p style=\"font-size:17px;line-height:1.5;margin:18px 0 0;color:#dffaec\">Thanks for reaching out. I'll get back to you within one business day — usually sooner.</p>\n  <span id=\"wfx-again\" style=\"cursor:pointer;margin-top:26px;display:inline-block;background:#14110c;color:#fff;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;padding:12px 18px;border:2px solid #fff;width:fit-content\">SEND ANOTHER →</span>\n</div>\n<form id=\"wfx-form\" style=\"background:#fff;border:3px solid #14110c;box-shadow:8px 8px 0 #14110c;padding:30px\">\n  <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">NAME</label>\n  <input name=\"name\" required placeholder=\"Your name\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;margin-bottom:18px\" />\n  <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">EMAIL</label>\n  <input name=\"email\" type=\"email\" required placeholder=\"you@company.com\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;margin-bottom:18px\" />\n  <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">PROJECT TYPE</label>\n  <select name=\"ptype\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;margin-bottom:18px\">\n    <option>Editorial illustration</option><option>Character design</option><option>Brand art / system</option><option>Mural</option><option>Something else</option>\n  </select>\n  <label style=\"display:block;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;margin-bottom:8px\">THE BRIEF</label>\n  <textarea name=\"brief\" rows=\"4\" placeholder=\"What are we making, and when do you need it?\" style=\"width:100%;box-sizing:border-box;font-family:'Space Grotesk',sans-serif;font-size:15px;padding:13px 14px;border:2px solid #14110c;background:#f3ede1;outline:none;resize:vertical;margin-bottom:22px\"></textarea>\n  <button type=\"submit\" style=\"cursor:pointer;display:block;width:100%;text-align:center;background:#2b4cff;color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;padding:15px;border:2px solid #14110c;box-shadow:5px 5px 0 #14110c\">SEND THE BRIEF →</button>\n</form>\n<script>\n(function(){\n  var form=document.getElementById('wfx-form'),sent=document.getElementById('wfx-sent'),again=document.getElementById('wfx-again');\n  if(!form)return;\n  form.addEventListener('submit',function(e){\n    e.preventDefault();var f=form;\n    var subject='New brief: '+(f.ptype.value||'Project')+' — '+(f.name.value||'');\n    var body='Name: '+f.name.value+'\\nEmail: '+f.email.value+'\\nProject type: '+f.ptype.value+'\\n\\n'+f.brief.value;\n    window.location.href='mailto:hello@webfixus.studio?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);\n    form.style.display='none';sent.style.display='flex';\n  });\n  if(again){again.addEventListener('click',function(){sent.style.display='none';form.style.display='block';form.reset();});}\n})();\n</script>"
       }
      }
     ]
