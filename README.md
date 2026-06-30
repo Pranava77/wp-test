@@ -19,3 +19,4 @@ Full details, editing notes, and a QA checklist: [`webfixus-build/webfixus/READM
 Pages use Elementor's classic **Section → Column → Widget** structure (works whether or not the Flexbox
 Container feature is enabled). Styling lives in `assets/css/webfixus.css`; interactions in
 `assets/js/webfixus.js`.
+# wp-test
