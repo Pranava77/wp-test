@@ -1,0 +1,113 @@
+[
+ {
+  "id": "043e95d",
+  "elType": "section",
+  "settings": {
+   "layout": "full_width",
+   "gap": "no",
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": true
+   }
+  },
+  "elements": [
+   {
+    "id": "796f833",
+    "elType": "column",
+    "settings": {
+     "_column_size": 100,
+     "_inline_size": null
+    },
+    "elements": [
+     {
+      "id": "8845a27",
+      "elType": "widget",
+      "widgetType": "html",
+      "settings": {
+       "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:64px 32px 28px\">\n  <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#6b6557\">/ PORTFOLIO — 2019 → 2026</div>\n  <h1 class=\"wfx-h1\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:72px;line-height:.92;letter-spacing:-.03em;margin:14px 0 0\">THE WORK.</h1>\n  <p style=\"font-size:18px;line-height:1.5;color:#3a352c;margin:18px 0 0;max-width:560px\">A decade of editorial covers, characters, brand systems and murals. Filter by what you need.</p>\n  <div class=\"wfx-chips\" style=\"display:flex;flex-wrap:wrap;gap:12px;margin-top:30px\"><span class=\"wfx-chip\" data-filter=\"all\" style=\"cursor:pointer;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;padding:9px 16px;border:2px solid #14110c;background:#14110c;color:#fff;box-shadow:3px 3px 0 #2b4cff\">ALL</span><span class=\"wfx-chip\" data-filter=\"Editorial\" style=\"cursor:pointer;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;padding:9px 16px;border:2px solid #14110c;background:#fff;color:#14110c;box-shadow:3px 3px 0 #14110c\">EDITORIAL</span><span class=\"wfx-chip\" data-filter=\"Character\" style=\"cursor:pointer;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;padding:9px 16px;border:2px solid #14110c;background:#fff;color:#14110c;box-shadow:3px 3px 0 #14110c\">CHARACTER</span><span class=\"wfx-chip\" data-filter=\"Brand\" style=\"cursor:pointer;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;padding:9px 16px;border:2px solid #14110c;background:#fff;color:#14110c;box-shadow:3px 3px 0 #14110c\">BRAND</span><span class=\"wfx-chip\" data-filter=\"Murals\" style=\"cursor:pointer;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.06em;padding:9px 16px;border:2px solid #14110c;background:#fff;color:#14110c;box-shadow:3px 3px 0 #14110c\">MURALS</span></div>\n</section>"
+      }
+     }
+    ]
+   }
+  ],
+  "isInner": false
+ },
+ {
+  "id": "49cd095",
+  "elType": "section",
+  "settings": {
+   "layout": "full_width",
+   "gap": "no",
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": true
+   }
+  },
+  "elements": [
+   {
+    "id": "e6c1558",
+    "elType": "column",
+    "settings": {
+     "_column_size": 100,
+     "_inline_size": null
+    },
+    "elements": [
+     {
+      "id": "9df2974",
+      "elType": "widget",
+      "widgetType": "html",
+      "settings": {
+       "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:8px 32px 80px\">\n  <div class=\"wfx-grid wfx-cols-3\" style=\"gap:22px\"><div class=\"wfx-card\" data-cat=\"Editorial\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#ffd23f;color:#14110c;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">The Atlantic</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Editorial</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Climate cover feature</div></div></div><div class=\"wfx-card\" data-cat=\"Character\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#ff5a36;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">Netflix</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Character</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Animated key art</div></div></div><div class=\"wfx-card\" data-cat=\"Brand\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#2b4cff;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">Patagonia</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Brand</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Brand illustration kit</div></div></div><div class=\"wfx-card\" data-cat=\"Character\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#16a06a;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">Mailchimp</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Character</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Campaign mascots</div></div></div><div class=\"wfx-card\" data-cat=\"Character\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#ff5a36;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">Adult Swim</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Character</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Title sequence frames</div></div></div><div class=\"wfx-card\" data-cat=\"Editorial\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#ffd23f;color:#14110c;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">The New Yorker</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Editorial</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Spot illustrations</div></div></div><div class=\"wfx-card\" data-cat=\"Murals\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#2b4cff;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">Wynwood Walls</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Murals</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">40ft exterior mural</div></div></div><div class=\"wfx-card\" data-cat=\"Brand\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#ff5a36;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">Nike</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Brand</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Sneaker drop graphics</div></div></div><div class=\"wfx-card\" data-cat=\"Editorial\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#16a06a;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">Penguin</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Editorial</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Classics cover series</div></div></div><div class=\"wfx-card\" data-cat=\"Murals\" style=\"border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;cursor:pointer\"><div style=\"aspect-ratio:1 / 1;background:#ffd23f;color:#14110c;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:14px;background:#fff;border-top:3px solid #14110c\"><div style=\"display:flex;justify-content:space-between;align-items:center\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px\">SXSW</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Murals</span></div><div style=\"font-size:13px;color:#6b6557;margin-top:6px;font-family:'Space Mono',monospace\">Main stage backdrop</div></div></div></div>\n<script>\n(function(){\n  var root = document.currentScript.closest('section');\n  if(!root) return;\n  var chipWrap = root.previousElementSibling ? null : null;\n  // chips live in the previous section; find them in the document scope\n  var chips = document.querySelectorAll('.wfx-chip');\n  var cards = root.querySelectorAll('.wfx-card');\n  function apply(f){\n    cards.forEach(function(c){\n      c.style.display = (f === 'all' || c.getAttribute('data-cat') === f) ? '' : 'none';\n    });\n    chips.forEach(function(ch){\n      var on = ch.getAttribute('data-filter') === f;\n      ch.style.background = on ? '#14110c' : '#fff';\n      ch.style.color = on ? '#fff' : '#14110c';\n      ch.style.boxShadow = on ? '3px 3px 0 #2b4cff' : '3px 3px 0 #14110c';\n    });\n  }\n  chips.forEach(function(ch){\n    ch.addEventListener('click', function(){ apply(ch.getAttribute('data-filter')); });\n  });\n})();\n</script>\n</section>"
+      }
+     }
+    ]
+   }
+  ],
+  "isInner": false
+ },
+ {
+  "id": "d5fbe02",
+  "elType": "section",
+  "settings": {
+   "layout": "full_width",
+   "gap": "no",
+   "padding": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": true
+   }
+  },
+  "elements": [
+   {
+    "id": "b3e2cec",
+    "elType": "column",
+    "settings": {
+     "_column_size": 100,
+     "_inline_size": null
+    },
+    "elements": [
+     {
+      "id": "a1f84e8",
+      "elType": "widget",
+      "widgetType": "html",
+      "settings": {
+       "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:0 32px 80px\">\n  <div style=\"background:#ff5a36;color:#fff;border:3px solid #14110c;box-shadow:8px 8px 0 #14110c;padding:48px 32px;text-align:center\">\n    <h2 class=\"wfx-h2\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:42px;line-height:.98;letter-spacing:-.02em;margin:0 0 18px\">WANT YOUR PROJECT IN THIS GRID?</h2>\n    <a href=\"/contact/\" class=\"wfx-a\" style=\"display:inline-block;background:#14110c;color:#fff;font-weight:700;font-size:16px;padding:15px 26px;border:2px solid #fff;box-shadow:5px 5px 0 #ffd23f\">LET'S TALK →</a>\n  </div>\n</section>"
+      }
+     }
+    ]
+   }
+  ],
+  "isInner": false
+ }
+]

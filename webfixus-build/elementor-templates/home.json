@@ -1,0 +1,230 @@
+{
+ "version": "0.4",
+ "title": "Home",
+ "type": "page",
+ "content": [
+  {
+   "id": "043e95d",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "796f833",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "8845a27",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:72px 32px 64px\">\n  <span style=\"display:inline-block;background:#ffd23f;border:2px solid #14110c;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.06em;padding:7px 12px;box-shadow:3px 3px 0 #14110c\">★ FREELANCE ILLUSTRATOR — OPEN FOR WORK</span>\n  <h1 class=\"wfx-h1-lg\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:65px;line-height:.92;letter-spacing:-.035em;margin:26px 0 0;max-width:920px\">ILLUSTRATION WITH A <span style=\"color:#2b4cff\">PULSE.</span></h1>\n  <p style=\"font-size:19px;line-height:1.5;color:#3a352c;margin:24px 0 0;max-width:560px\">I'm WEBFIXUS — I make hand-drawn editorial, character &amp; brand art that turns scrollers into starers. Big ideas, bold lines, fast turnarounds.</p>\n  <div style=\"display:flex;gap:14px;margin-top:34px;flex-wrap:wrap\">\n    <a href=\"/work/\" class=\"wfx-a\" style=\"background:#2b4cff;color:#fff;font-weight:700;font-size:16px;padding:15px 24px;border:2px solid #14110c;box-shadow:5px 5px 0 #14110c\">SEE MY WORK →</a>\n    <a href=\"/contact/\" class=\"wfx-a\" style=\"background:#fff;color:#14110c;font-weight:700;font-size:16px;padding:15px 24px;border:2px solid #14110c;box-shadow:5px 5px 0 #14110c\">START A PROJECT</a>\n  </div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "49cd095",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "e6c1558",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "9df2974",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section style=\"border-top:3px solid #14110c;border-bottom:3px solid #14110c\">\n  <div class=\"wfx-stats\" style=\"max-width:1120px;margin:0 auto;display:flex;font-family:'Space Mono',monospace;font-weight:700;letter-spacing:.04em\">\n    <span style=\"flex:1;text-align:center;padding:18px 6px;background:#ff5a36;color:#fff;border-right:3px solid #14110c;font-size:15px\">120+ PROJECTS</span>\n    <span style=\"flex:1;text-align:center;padding:18px 6px;background:#2b4cff;color:#fff;border-right:3px solid #14110c;font-size:15px\">40 CLIENTS</span>\n    <span style=\"flex:1;text-align:center;padding:18px 6px;background:#16a06a;color:#fff;border-right:3px solid #14110c;font-size:15px\">7 YEARS</span>\n    <span style=\"flex:1;text-align:center;padding:18px 6px;background:#ffd23f;color:#14110c;font-size:15px\">2-DAY REPLIES</span>\n  </div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d5fbe02",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "b3e2cec",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "a1f84e8",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:72px 32px 24px\">\n  <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#6b6557\">/ WHAT I MAKE</div>\n  <h2 class=\"wfx-h2\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;letter-spacing:-.02em;margin:10px 0 32px\">FOUR THINGS, DONE LOUD.</h2>\n  <div class=\"wfx-grid wfx-cols-4\" style=\"gap:20px\"><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Space Mono',monospace;font-size:13px;color:#2b4cff;font-weight:700\">01</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin-top:10px\">Editorial</div><div style=\"font-size:14px;color:#3a352c;margin-top:8px;line-height:1.45\">Covers, op-eds &amp; feature spreads with a point of view.</div></div><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Space Mono',monospace;font-size:13px;color:#ff5a36;font-weight:700\">02</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin-top:10px\">Characters</div><div style=\"font-size:14px;color:#3a352c;margin-top:8px;line-height:1.45\">Original casts &amp; mascots for IP, games and brands.</div></div><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Space Mono',monospace;font-size:13px;color:#ffb300;font-weight:700\">03</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin-top:10px\">Brand Art</div><div style=\"font-size:14px;color:#3a352c;margin-top:8px;line-height:1.45\">Illustration systems that scale across every touchpoint.</div></div><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Space Mono',monospace;font-size:13px;color:#16a06a;font-weight:700\">04</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;margin-top:10px\">Murals</div><div style=\"font-size:14px;color:#3a352c;margin-top:8px;line-height:1.45\">Big walls, festival stages &amp; spaces people walk into.</div></div></div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "ede7414",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "211970d",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "47e8b26",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:56px 32px 24px\">\n  <div style=\"display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;flex-wrap:wrap;gap:14px\">\n    <div>\n      <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#6b6557\">/ SELECTED WORK</div>\n      <h2 class=\"wfx-h2\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;letter-spacing:-.02em;margin:10px 0 0\">RECENT FAVORITES.</h2>\n    </div>\n    <a href=\"/work/\" class=\"wfx-a\" style=\"font-family:'Space Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.04em;border-bottom:3px solid #2b4cff;padding-bottom:2px\">VIEW ALL WORK →</a>\n  </div>\n  <div class=\"wfx-grid wfx-cols-3\" style=\"gap:20px\"><a href=\"/work/\" class=\"wfx-a\" style=\"display:block;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c\"><div style=\"aspect-ratio:4 / 3;background:#ffd23f;color:#14110c;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:12px 14px;background:#fff;display:flex;justify-content:space-between;align-items:center;border-top:3px solid #14110c\"><span style=\"font-weight:700;font-size:15px\">The Atlantic</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Editorial</span></div></a><a href=\"/work/\" class=\"wfx-a\" style=\"display:block;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c\"><div style=\"aspect-ratio:4 / 3;background:#ff5a36;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:12px 14px;background:#fff;display:flex;justify-content:space-between;align-items:center;border-top:3px solid #14110c\"><span style=\"font-weight:700;font-size:15px\">Netflix</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Character</span></div></a><a href=\"/work/\" class=\"wfx-a\" style=\"display:block;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c\"><div style=\"aspect-ratio:4 / 3;background:#2b4cff;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:12px 14px;background:#fff;display:flex;justify-content:space-between;align-items:center;border-top:3px solid #14110c\"><span style=\"font-weight:700;font-size:15px\">Patagonia</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Brand</span></div></a><a href=\"/work/\" class=\"wfx-a\" style=\"display:block;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c\"><div style=\"aspect-ratio:4 / 3;background:#16a06a;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:12px 14px;background:#fff;display:flex;justify-content:space-between;align-items:center;border-top:3px solid #14110c\"><span style=\"font-weight:700;font-size:15px\">Mailchimp</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Character</span></div></a><a href=\"/work/\" class=\"wfx-a\" style=\"display:block;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c\"><div style=\"aspect-ratio:4 / 3;background:#ff5a36;color:#ffffff;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:12px 14px;background:#fff;display:flex;justify-content:space-between;align-items:center;border-top:3px solid #14110c\"><span style=\"font-weight:700;font-size:15px\">Adult Swim</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Character</span></div></a><a href=\"/work/\" class=\"wfx-a\" style=\"display:block;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c\"><div style=\"aspect-ratio:4 / 3;background:#ffd23f;color:#14110c;opacity:.96;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em\">[ ILLUSTRATION ]</div><div style=\"padding:12px 14px;background:#fff;display:flex;justify-content:space-between;align-items:center;border-top:3px solid #14110c\"><span style=\"font-weight:700;font-size:15px\">The New Yorker</span><span style=\"font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#14110c;color:#fff;padding:3px 7px\">Editorial</span></div></a></div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "93a8f94",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "18e890e",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "f981ac2",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:56px 32px\">\n  <div style=\"background:#2b4cff;color:#fff;border:3px solid #14110c;box-shadow:8px 8px 0 #14110c;padding:48px 44px\">\n    <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#c3cfff\">/ WORD ON THE STREET</div>\n    <p style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:30px;line-height:1.22;margin:18px 0 0;max-width:820px\">\"WEBFIXUS gave our brand a face. Sales decks, packaging, socials — all of it finally looks like us, and nothing like our competitors.\"</p>\n    <div style=\"font-family:'Space Mono',monospace;font-size:13px;margin-top:22px;letter-spacing:.06em;color:#cdd6ff\">— HEAD OF BRAND, PATAGONIA</div>\n  </div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "710c948",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "1b1daf5",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "03a7281",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:0 32px 80px\">\n  <div style=\"background:#14110c;color:#f3ede1;border:3px solid #14110c;padding:64px 32px;text-align:center\">\n    <h2 class=\"wfx-h2-xl\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:54px;line-height:.96;letter-spacing:-.025em;margin:0 0 14px\">GOT SOMETHING TO DRAW?</h2>\n    <p style=\"font-size:17px;color:#bdb6a6;margin:0 0 28px\">Tell me about it. I reply within a day.</p>\n    <a href=\"mailto:hello@webfixus.studio\" class=\"wfx-a\" style=\"display:inline-block;background:#ffd23f;color:#14110c;font-weight:700;font-size:17px;padding:16px 28px;border:2px solid #f3ede1;box-shadow:5px 5px 0 #2b4cff\">HELLO@WEBFIXUS.STUDIO →</a>\n  </div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

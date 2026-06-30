@@ -1,0 +1,156 @@
+{
+ "version": "0.4",
+ "title": "About",
+ "type": "page",
+ "content": [
+  {
+   "id": "043e95d",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "796f833",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "8845a27",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad wfx-split\" style=\"max-width:1120px;margin:0 auto;padding:64px 32px 40px;display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center\">\n  <div>\n    <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#6b6557\">/ ABOUT</div>\n    <h1 class=\"wfx-h1\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:64px;line-height:.94;letter-spacing:-.03em;margin:14px 0 0\">HI, I DRAW FOR A LIVING.</h1>\n    <p style=\"font-size:18px;line-height:1.55;color:#3a352c;margin:22px 0 0\">WEBFIXUS is the one-person illustration studio of an artist who's been making pictures for editorial, games and brands since 2019. No account managers, no hand-offs — you work directly with the person holding the pen.</p>\n    <p style=\"font-size:18px;line-height:1.55;color:#3a352c;margin:16px 0 0\">I believe illustration should have an opinion. Every brief gets a real idea before it gets a single line, and every line is drawn by hand before it's cleaned up in pixels.</p>\n  </div>\n  <div style=\"aspect-ratio:4/5;background:#ffd23f;border:3px solid #14110c;box-shadow:8px 8px 0 #14110c;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:12px;color:#14110c\">[ PORTRAIT / SELF-PORTRAIT ]</div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "49cd095",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "e6c1558",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "9df2974",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:40px 32px\">\n  <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#6b6557\">/ HOW I WORK</div>\n  <h2 class=\"wfx-h2\" style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;letter-spacing:-.02em;margin:10px 0 30px\">FOUR STEPS, NO SURPRISES.</h2>\n  <div class=\"wfx-grid wfx-cols-4\" style=\"gap:20px\"><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:34px;color:#2b4cff\">01</div><div style=\"font-weight:700;font-size:17px;margin-top:8px\">Brief</div><div style=\"font-size:14px;color:#3a352c;margin-top:6px;line-height:1.45\">We talk. I learn the goal, the audience and the deadline.</div></div><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:34px;color:#ff5a36\">02</div><div style=\"font-weight:700;font-size:17px;margin-top:8px\">Sketch</div><div style=\"font-size:14px;color:#3a352c;margin-top:6px;line-height:1.45\">2–3 rough directions. We pick one before any polish.</div></div><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:34px;color:#16a06a\">03</div><div style=\"font-weight:700;font-size:17px;margin-top:8px\">Draw</div><div style=\"font-size:14px;color:#3a352c;margin-top:6px;line-height:1.45\">Final art, hand-drawn, with one round of revisions.</div></div><div style=\"background:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:22px\"><div style=\"font-family:'Archivo',sans-serif;font-weight:900;font-size:34px;color:#ffb300\">04</div><div style=\"font-weight:700;font-size:17px;margin-top:8px\">Deliver</div><div style=\"font-size:14px;color:#3a352c;margin-top:6px;line-height:1.45\">Every format you need, source files, full rights.</div></div></div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d5fbe02",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "b3e2cec",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "a1f84e8",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:40px 32px 24px\">\n  <div style=\"font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.14em;color:#6b6557\">/ TRUSTED BY</div>\n  <div style=\"display:flex;flex-wrap:wrap;gap:14px;margin-top:18px\"><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">THE ATLANTIC</span><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">NETFLIX</span><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">PATAGONIA</span><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">MAILCHIMP</span><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">ADULT SWIM</span><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">THE NEW YORKER</span><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">NIKE</span><span style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;border:2px solid #14110c;padding:10px 16px;background:#fff\">PENGUIN</span></div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "ede7414",
+   "elType": "section",
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "211970d",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null
+     },
+     "elements": [
+      {
+       "id": "47e8b26",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"wfx-wrap wfx-pad\" style=\"max-width:1120px;margin:0 auto;padding:40px 32px 80px\">\n  <div class=\"wfx-grid wfx-cols-3\" style=\"gap:20px\"><div style=\"background:#16a06a;color:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:24px\"><div style=\"font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.1em;color:#bdf3d8\">TOOLS</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;margin-top:8px;line-height:1.25\">Ink, Procreate, Photoshop, Risograph</div></div><div style=\"background:#2b4cff;color:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:24px\"><div style=\"font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.1em;color:#cdd6ff\">RECOGNITION</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;margin-top:8px;line-height:1.25\">AOI Award · ADC Merit · It's Nice That feature</div></div><div style=\"background:#ff5a36;color:#fff;border:3px solid #14110c;box-shadow:6px 6px 0 #14110c;padding:24px\"><div style=\"font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.1em;color:#ffd6cc\">BASED IN</div><div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:20px;margin-top:8px;line-height:1.25\">Brooklyn, NY — working worldwide</div></div></div>\n</section>"
+       }
+      }
+     ]
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": []
+}

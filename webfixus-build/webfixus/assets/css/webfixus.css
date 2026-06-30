@@ -1,0 +1,89 @@
+/* ============================================================
+   WEBFIXUS — neo-brutalist design system
+   Loaded site-wide by the theme. The Elementor pages put their
+   markup in HTML widgets that keep the prototype's inline styles
+   for pixel fidelity; the classes below add the responsive
+   behaviour the static prototype lacked.
+   ============================================================ */
+
+:root{
+  --wfx-cream:#f3ede1;
+  --wfx-ink:#14110c;
+  --wfx-blue:#2b4cff;
+  --wfx-red:#ff5a36;
+  --wfx-green:#16a06a;
+  --wfx-yellow:#ffd23f;
+  --wfx-amber:#ffb300;
+  --wfx-body:#3a352c;
+  --wfx-muted:#6b6557;
+}
+
+/* ---- globals ---- */
+html, body{ margin:0; background:var(--wfx-cream); }
+body{ font-family:'Space Grotesk',sans-serif; color:var(--wfx-ink); }
+*::selection{ background:var(--wfx-yellow); color:var(--wfx-ink); }
+::placeholder{ color:#9a937f; }
+
+/* Neutralise theme/Elementor wrappers so sections sit edge-to-edge */
+.wfx-page .elementor-section,
+.wfx-page .elementor-container,
+.wfx-page .elementor-column,
+.wfx-page .elementor-widget-html,
+.wfx-page .elementor-widget-container{ margin:0; padding:0; }
+.wfx-page .elementor-widget{ margin-bottom:0 !important; }
+
+/* The centered content rail used by most sections */
+.wfx-wrap{ max-width:1120px; margin:0 auto; }
+
+/* ---- responsive grids ---- */
+.wfx-grid{ display:grid; }
+.wfx-cols-4{ grid-template-columns:repeat(4,1fr); }
+.wfx-cols-3{ grid-template-columns:repeat(3,1fr); }
+.wfx-cols-2{ grid-template-columns:repeat(2,1fr); }
+
+@media (max-width:900px){
+  .wfx-cols-4{ grid-template-columns:repeat(2,1fr); }
+  .wfx-cols-3{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:600px){
+  .wfx-cols-4,
+  .wfx-cols-3,
+  .wfx-cols-2{ grid-template-columns:1fr; }
+  .wfx-split{ grid-template-columns:1fr !important; }
+}
+
+/* two-column split layouts (about / contact) collapse on mobile */
+@media (max-width:820px){
+  .wfx-split{ grid-template-columns:1fr !important; }
+}
+
+/* ---- fluid display headings ---- */
+.wfx-h1{ font-size:clamp(40px,8vw,72px); }
+.wfx-h1-lg{ font-size:clamp(38px,7.5vw,65px); }
+.wfx-h2{ font-size:clamp(28px,5vw,40px); }
+.wfx-h2-xl{ font-size:clamp(34px,6vw,54px); }
+
+/* ---- mobile padding relief on the wide rails ---- */
+@media (max-width:600px){
+  .wfx-pad{ padding-left:20px !important; padding-right:20px !important; }
+  .wfx-stats{ flex-wrap:wrap; }
+  .wfx-stats > span{ flex:1 0 50% !important; border-right:0 !important; }
+}
+
+/* ---- nav (theme header) ---- */
+.wfx-header{ position:sticky; top:0; z-index:50; background:var(--wfx-cream); border-bottom:3px solid var(--wfx-ink); }
+.wfx-header-inner{ max-width:1120px; margin:0 auto; padding:16px 32px; display:flex; justify-content:space-between; align-items:center; }
+.wfx-logo{ font-family:'Archivo',sans-serif; font-weight:900; font-size:22px; letter-spacing:-.02em; text-decoration:none; color:var(--wfx-ink); }
+.wfx-nav{ display:flex; align-items:center; gap:22px; }
+.wfx-nav a{ text-decoration:none; color:var(--wfx-ink); }
+.wfx-nav-link{ font-family:'Space Mono',monospace; font-size:13px; font-weight:700; letter-spacing:.06em; padding-bottom:3px; border-bottom:3px solid transparent; }
+.wfx-nav-link.is-active{ border-bottom-color:var(--wfx-blue); }
+.wfx-nav-cta{ font-family:'Space Mono',monospace; font-size:13px; font-weight:700; letter-spacing:.04em; background:var(--wfx-blue); color:#fff !important; padding:9px 16px; border:2px solid var(--wfx-ink); box-shadow:3px 3px 0 var(--wfx-ink); }
+
+@media (max-width:600px){
+  .wfx-header-inner{ padding:12px 18px; flex-wrap:wrap; gap:10px; }
+  .wfx-nav{ gap:14px; }
+}
+
+/* links inside HTML-widget markup that should look like the prototype's spans */
+.wfx-a{ text-decoration:none; color:inherit; cursor:pointer; }
