@@ -75,6 +75,10 @@ body{ font-family:'Space Grotesk',sans-serif; color:var(--wfx-ink); }
 .wfx-header-inner{ max-width:1120px; margin:0 auto; padding:16px 32px; display:flex; justify-content:space-between; align-items:center; }
 .wfx-logo{ font-family:'Archivo',sans-serif; font-weight:900; font-size:22px; letter-spacing:-.02em; text-decoration:none; color:var(--wfx-ink); }
 .wfx-nav{ display:flex; align-items:center; gap:22px; }
+/* When the nav is a WordPress menu (Appearance → Menus) it renders as a <ul>;
+   make that <ul> the flex row so it matches the hardcoded fallback exactly. */
+.wfx-nav-list{ list-style:none; margin:0; padding:0; display:flex; align-items:center; gap:22px; }
+.wfx-nav-list li{ margin:0; }
 .wfx-nav a{ text-decoration:none; color:var(--wfx-ink); }
 .wfx-nav-link{ font-family:'Space Mono',monospace; font-size:13px; font-weight:700; letter-spacing:.06em; padding-bottom:3px; border-bottom:3px solid transparent; }
 .wfx-nav-link.is-active{ border-bottom-color:var(--wfx-blue); }
@@ -83,7 +87,332 @@ body{ font-family:'Space Grotesk',sans-serif; color:var(--wfx-ink); }
 @media (max-width:600px){
   .wfx-header-inner{ padding:12px 18px; flex-wrap:wrap; gap:10px; }
   .wfx-nav{ gap:14px; }
+  .wfx-nav-list{ gap:14px; flex-wrap:wrap; }
 }
 
 /* links inside HTML-widget markup that should look like the prototype's spans */
 .wfx-a{ text-decoration:none; color:inherit; cursor:pointer; }
+
+/* ============================================================
+   RESPONSIVE RETROFIT
+   The Elementor pages were built with fixed desktop sizes and no
+   tablet/mobile values, so the home page overflowed sideways on
+   phones (~429px wide content in a 390px viewport). These rules
+   add the missing fluid behaviour. Verified at 390px: every page
+   now has scrollWidth == viewport (no horizontal scroll).
+   ============================================================ */
+
+/* 1) Stop any sideways scroll from an element overshooting. */
+html, body{ overflow-x:hidden; max-width:100%; }
+img, svg, video, iframe{ max-width:100%; height:auto; }
+*, *::before, *::after{ box-sizing:border-box; }
+
+/* 2) Tablet — ease the wide content rail's side padding. */
+@media (max-width:1024px){
+  .elementor-widget-html [style*="padding:56px 32px"],
+  .elementor-widget-html [style*="padding: 56px 32px"]{
+    padding-left:24px !important; padding-right:24px !important;
+  }
+}
+
+/* 3) Phone (<=767px) — the real fixes. */
+@media (max-width:767px){
+
+  /* 3a) Fluid-scale every big display heading so the longest single
+         word can never exceed the viewport. Covers Elementor heading
+         widgets AND raw h1-h3 inside HTML widgets. */
+  .elementor-heading-title,
+  .elementor-widget-html h1,
+  .elementor-widget-html h2,
+  .elementor-widget-html h3{
+    font-size:clamp(22px, 8.5vw, 38px) !important;
+    line-height:1.06 !important;
+    overflow-wrap:break-word; word-break:break-word;
+  }
+
+  /* 3b) Relax the heavy letter-spacing on the big stat headings. */
+  .elementor-widget-heading .elementor-heading-title{ letter-spacing:.02em !important; }
+
+  /* 3c) Collapse the oversized rail padding. */
+  .elementor-widget-html [style*="padding:56px 32px"],
+  .elementor-widget-html [style*="padding: 56px 32px"]{ padding:30px 18px !important; }
+
+  /* 3d) Any prototype flex row wraps instead of overflowing. */
+  .elementor-widget-html [style*="display:flex"],
+  .elementor-widget-html [style*="display: flex"]{ flex-wrap:wrap !important; }
+
+  /* 3e) Elementor inner columns go full width on phones. */
+  .elementor-column{ width:100% !important; }
+
+  /* 3f) Long words in body copy break rather than overflow. */
+  .elementor-widget-text-editor,
+  .elementor-widget-html p{ overflow-wrap:break-word; }
+
+  /* 3g) Header / nav — let it wrap and keep the CTA on-screen. */
+  .wfx-header-inner, .wfx-nav, .wfx-nav-list,
+  .elementor-nav-menu, .elementor-widget-wrap{ flex-wrap:wrap !important; }
+}
+
+/* 4) Header logo/nav: stack cleanly on small phones so the CONTACT
+      CTA can never be pushed off the right edge. */
+@media (max-width:600px){
+  .wfx-header-inner{ flex-direction:column; align-items:flex-start; gap:12px; }
+}
+
+/* ============================================================
+   LOGO SLOT — size the uploaded custom-logo in the header + footer.
+   (Uploaded via Appearance → Customize → Site Identity → Logo.
+   With no logo set, the "WEBFIXUS" wordmark shows as a fallback.)
+   ============================================================ */
+.wfx-logo--img{ display:inline-flex; align-items:center; }
+.wfx-header .custom-logo-link{ display:inline-flex; }
+.wfx-header .custom-logo{ max-height:40px; width:auto; height:auto; display:block; }
+.wfx-foot-logo .custom-logo{ max-height:46px; width:auto; height:auto; display:block; }
+
+/* ============================================================
+   MOBILE CAROUSEL
+   Turns the two long card rows into horizontal swipe carousels on
+   phones (they otherwise stack into a very tall column):
+     f21e934 = home "FOUR THINGS" feature cards  (4 × col-25)
+     54a3b94 = home "RECENT FAVORITES" work cards (6 × col-33)
+   These id-scoped selectors out-specify rule 3e above, so instead of
+   stacking, the columns line up in a scroll-snapping row. NOTE: if you
+   rebuild either section in Elementor its element-id changes — update
+   the two ids below to match.
+   ============================================================ */
+@media (max-width:767px){
+  .elementor-element-f21e934 > .elementor-container,
+  .elementor-element-54a3b94 > .elementor-container{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    overflow-x:auto !important;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    gap:16px;
+    padding-bottom:14px;
+    scrollbar-width:none;               /* Firefox: hide scrollbar */
+  }
+  .elementor-element-f21e934 > .elementor-container::-webkit-scrollbar,
+  .elementor-element-54a3b94 > .elementor-container::-webkit-scrollbar{ display:none; }
+
+  /* Each card takes ~82% width so the next one peeks in (swipe affordance). */
+  .elementor-element-f21e934 > .elementor-container > .elementor-column,
+  .elementor-element-54a3b94 > .elementor-container > .elementor-column{
+    flex:0 0 82% !important;
+    width:82% !important;
+    max-width:82% !important;
+    scroll-snap-align:start;
+  }
+}
+
+/* ============================================================
+   CONTACT FORM 7 — match the theme's hand-built brutalist form.
+   Drop a CF7 shortcode into an Elementor *Shortcode* widget on the
+   Contact page and it inherits this styling automatically. Values
+   mirror the original hardcoded form (white box, 3px ink border,
+   8px hard shadow, cream #f3ede1 inputs, Space Mono labels, blue
+   submit). Colors use the theme tokens with literal fallbacks.
+   ============================================================ */
+.wpcf7 .wpcf7-form{
+  --cf-ink:   var(--wfx-ink, #14110c);
+  --cf-cream: var(--wfx-cream, #f3ede1);
+  --cf-blue:  var(--wfx-blue, #2b4cff);
+  --cf-green: var(--wfx-green, #16a06a);
+  --cf-red:   var(--wfx-red, #ff5a36);
+
+  background:#fff;
+  border:3px solid var(--cf-ink);
+  box-shadow:8px 8px 0 var(--cf-ink);
+  padding:30px;
+  box-sizing:border-box;
+}
+.wpcf7 .wpcf7-form,
+.wpcf7 .wpcf7-form *{ box-sizing:border-box; }
+
+/* Field labels (CF7 wraps the input inside a <label>). */
+.wpcf7 .wpcf7-form label{
+  display:block;
+  font-family:'Space Mono',monospace;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--cf-ink);
+  margin-bottom:8px;
+}
+
+/* Text-like inputs, selects, and textareas. */
+.wpcf7 .wpcf7-form input[type="text"],
+.wpcf7 .wpcf7-form input[type="email"],
+.wpcf7 .wpcf7-form input[type="tel"],
+.wpcf7 .wpcf7-form input[type="url"],
+.wpcf7 .wpcf7-form input[type="number"],
+.wpcf7 .wpcf7-form input[type="date"],
+.wpcf7 .wpcf7-form select,
+.wpcf7 .wpcf7-form textarea{
+  width:100%;
+  font-family:'Space Grotesk',sans-serif;
+  font-size:15px;
+  padding:13px 14px;
+  border:2px solid var(--cf-ink);
+  background:var(--cf-cream);
+  color:var(--cf-ink);
+  outline:none;
+  border-radius:0;
+  margin-top:6px;
+  margin-bottom:18px;
+  -webkit-appearance:none;
+  appearance:none;
+}
+.wpcf7 .wpcf7-form textarea{ resize:vertical; min-height:120px; }
+.wpcf7 .wpcf7-form input:focus,
+.wpcf7 .wpcf7-form select:focus,
+.wpcf7 .wpcf7-form textarea:focus{
+  box-shadow:3px 3px 0 var(--cf-ink);
+}
+.wpcf7 .wpcf7-form ::placeholder{ color:#8a8578; opacity:1; }
+
+/* Submit button — blue box with the hard-shadow "pop" on hover. */
+.wpcf7 .wpcf7-form input[type="submit"],
+.wpcf7 .wpcf7-form button[type="submit"],
+.wpcf7 .wpcf7-form .wpcf7-submit{
+  cursor:pointer;
+  display:block;
+  width:100%;
+  text-align:center;
+  font-family:'Space Grotesk',sans-serif;
+  font-weight:700;
+  font-size:16px;
+  padding:15px;
+  color:#fff;
+  background:var(--cf-blue);
+  border:2px solid var(--cf-ink);
+  box-shadow:5px 5px 0 var(--cf-ink);
+  border-radius:0;
+  transition:transform .1s ease, box-shadow .1s ease;
+}
+.wpcf7 .wpcf7-form input[type="submit"]:hover,
+.wpcf7 .wpcf7-form button[type="submit"]:hover,
+.wpcf7 .wpcf7-form .wpcf7-submit:hover{
+  transform:translate(-2px,-2px);
+  box-shadow:7px 7px 0 var(--cf-ink);
+}
+
+/* The AJAX spinner CF7 shows while sending. */
+.wpcf7 .wpcf7-spinner{ margin:14px auto 0; }
+
+/* Validation + status messages, restyled as brutalist notices. */
+.wpcf7 .wpcf7-response-output{
+  font-family:'Space Mono',monospace;
+  font-size:13px;
+  line-height:1.4;
+  margin:18px 0 0 !important;
+  padding:14px 16px !important;
+  border:3px solid var(--cf-ink) !important;
+  box-shadow:4px 4px 0 var(--cf-ink);
+  border-radius:0;
+  color:var(--cf-ink);
+  background:var(--cf-cream);
+}
+.wpcf7 form.sent .wpcf7-response-output{ background:var(--cf-green); color:#fff; }
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.spam .wpcf7-response-output{ background:var(--cf-red); color:#fff; }
+
+/* Per-field "this is required" tip. */
+.wpcf7 .wpcf7-not-valid-tip{
+  font-family:'Space Mono',monospace;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.04em;
+  color:var(--cf-red);
+  margin:-12px 0 14px;
+}
+.wpcf7 .wpcf7-form .wpcf7-not-valid{ border-color:var(--cf-red); }
+
+/* Tame the hard shadows on phones so they never add sideways scroll. */
+@media (max-width:600px){
+  .wpcf7 .wpcf7-form{ box-shadow:5px 5px 0 var(--wfx-ink,#14110c); }
+}
+
+/* ============================================================
+   ANIMATIONS & TRANSITIONS
+   ------------------------------------------------------------
+   1) Scroll-reveal: top-level sections fade + rise into view.
+      The hidden state lives on .wfx-reveal, which is added by JS
+      (webfixus-anim.js). If JS never runs, nothing is hidden, so the
+      page can't go blank. Skipped in the Elementor editor and under
+      reduced-motion; a 3s JS safety net reveals any leftovers.
+   2) Hover micro-interactions on the brutalist elements.
+   3) Sticky-header shadow once scrolled.
+   All motion respects prefers-reduced-motion.
+   ============================================================ */
+
+@media (prefers-reduced-motion: no-preference){
+
+  /* --- 1) scroll reveal --- */
+  /* SAFETY BY DESIGN: the hidden state lives ONLY on .wfx-reveal, which is
+     added by JavaScript. If the JS never runs, no section is ever hidden, so
+     the page can't go blank. Also skipped inside the Elementor editor
+     (body.elementor-editor-active) so the canvas is never blank while editing. */
+  .wfx-page:not(.elementor-editor-active) .wfx-reveal{
+    opacity:0;
+    transform:translateY(26px);
+    transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1);
+    will-change:opacity, transform;
+  }
+  .wfx-page .wfx-reveal.is-inview{
+    opacity:1;
+    transform:none;
+  }
+
+  /* --- 2) hover micro-interactions --- */
+  .wfx-nav-cta,
+  .wfx-logo,
+  .wfx-page .elementor-button{
+    transition:transform .14s ease, box-shadow .14s ease,
+               background-color .14s ease, color .14s ease, border-color .14s ease;
+  }
+
+  /* Buttons + CTA: shift up-left and deepen the hard shadow (the brutalist "pop"). */
+  .wfx-nav-cta:hover,
+  .wfx-page .elementor-button:hover{
+    transform:translate(-2px,-2px);
+    box-shadow:6px 6px 0 var(--wfx-ink) !important;
+  }
+
+  /* Nav links: underline fills in on hover. */
+  .wfx-nav-link{ transition:border-color .18s ease, color .18s ease; }
+  .wfx-nav-link:hover{ border-bottom-color:var(--wfx-ink); }
+
+  /* Logo: a tiny playful tilt. */
+  .wfx-logo:hover{ transform:scale(1.04) rotate(-1.5deg); }
+
+  /* Cards: lift + bigger shadow. box-shadow needs !important because the
+     card's base shadow is set inline in the page markup. */
+  .wfx-card{ transition:transform .16s ease, box-shadow .16s ease; }
+  .wfx-card:hover{
+    transform:translate(-4px,-4px);
+    box-shadow:10px 10px 0 var(--wfx-ink) !important;
+  }
+
+  /* Filter chips: gentle rise. */
+  .wfx-chip{ transition:transform .12s ease, box-shadow .12s ease,
+             background-color .12s ease, color .12s ease; }
+  .wfx-chip:hover{ transform:translateY(-2px); }
+}
+
+/* --- 3) sticky-header shadow on scroll (fine even in reduced-motion) --- */
+.wfx-header{ transition:box-shadow .2s ease; }
+html.wfx-scrolled .wfx-header{ box-shadow:0 5px 0 -1px var(--wfx-ink); }
+
+/* Hard stop for anyone who prefers reduced motion: no reveal offset, no
+   transitions/animations anywhere. */
+@media (prefers-reduced-motion: reduce){
+  .wfx-page .wfx-reveal{ opacity:1 !important; transform:none !important; }
+  *, *::before, *::after{
+    animation-duration:.001ms !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+}

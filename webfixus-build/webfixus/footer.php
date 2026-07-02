@@ -15,7 +15,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div style="max-width:1120px;margin:0 auto;padding:56px 32px 40px">
 		<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px">
 			<div style="max-width:360px">
-				<div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:32px;letter-spacing:-.02em">WEBFIXUS</div>
+				<?php if ( has_custom_logo() ) : ?>
+					<div class="wfx-foot-logo"><?php the_custom_logo(); ?></div>
+				<?php else : ?>
+					<div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:32px;letter-spacing:-.02em">WEBFIXUS</div>
+				<?php endif; ?>
 				<p style="font-size:15px;color:#bdb6a6;line-height:1.5;margin:12px 0 0">Freelance illustration with a pulse. Editorial, character, brand &amp; murals — drawn by hand, delivered fast.</p>
 			</div>
 			<div style="display:flex;gap:56px;flex-wrap:wrap">

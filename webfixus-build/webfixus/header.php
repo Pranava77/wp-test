@@ -29,11 +29,35 @@ function webfixus_is( $slug ) {
 
 <header class="wfx-header">
 	<div class="wfx-header-inner">
-		<a class="wfx-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">WEBFIXUS</a>
+		<?php if ( has_custom_logo() ) : ?>
+			<span class="wfx-logo wfx-logo--img"><?php the_custom_logo(); ?></span>
+		<?php else : ?>
+			<a class="wfx-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">WEBFIXUS</a>
+		<?php endif; ?>
 		<nav class="wfx-nav">
-			<a class="wfx-nav-link<?php echo esc_attr( webfixus_is( 'work' ) ); ?>" href="<?php echo esc_url( home_url( '/work/' ) ); ?>">WORK</a>
-			<a class="wfx-nav-link<?php echo esc_attr( webfixus_is( 'about' ) ); ?>" href="<?php echo esc_url( home_url( '/about/' ) ); ?>">ABOUT</a>
-			<a class="wfx-nav-cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">CONTACT →</a>
+			<?php
+			if ( has_nav_menu( 'primary' ) ) {
+				// Editable from Appearance → Menus. Assign a menu to the
+				// "Primary" location and it renders here. To make a link the
+				// blue CTA button, give that menu item the CSS class "cta"
+				// (Menus screen → Screen Options → tick "CSS Classes").
+				wp_nav_menu( array(
+					'theme_location' => 'primary',
+					'container'      => false,
+					'menu_class'     => 'wfx-nav-list',
+					'depth'          => 1,
+					'fallback_cb'    => false,
+				) );
+			} else {
+				// Fallback until you create + assign a Primary menu. These are
+				// the original links so the header is never empty.
+				?>
+				<a class="wfx-nav-link<?php echo esc_attr( webfixus_is( 'work' ) ); ?>" href="<?php echo esc_url( home_url( '/work/' ) ); ?>">WORK</a>
+				<a class="wfx-nav-link<?php echo esc_attr( webfixus_is( 'about' ) ); ?>" href="<?php echo esc_url( home_url( '/about/' ) ); ?>">ABOUT</a>
+				<a class="wfx-nav-cta" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">CONTACT →</a>
+				<?php
+			}
+			?>
 		</nav>
 	</div>
 </header>

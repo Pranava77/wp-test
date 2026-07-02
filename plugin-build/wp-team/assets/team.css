@@ -1,0 +1,170 @@
+/* ==========================================================================
+   WP Team — restyled to match the WEBFIXUS neo-brutalist design system.
+   Mirrors the theme tokens (assets/css/webfixus.css): cream canvas, ink-black
+   3px borders, hard offset shadows, squared corners, Space Grotesk / Archivo /
+   Space Mono type, and rotating accent colors per card.
+
+   The --wfx-* variables below fall back to the theme's literal values, so this
+   looks correct even if the plugin's CSS happens to load before the theme's.
+   ========================================================================== */
+
+.wt-grid {
+	/* Local copies of the WEBFIXUS palette (fallbacks = theme values). */
+	--wt-ink:    var(--wfx-ink, #14110c);
+	--wt-cream:  var(--wfx-cream, #f3ede1);
+	--wt-blue:   var(--wfx-blue, #2b4cff);
+	--wt-red:    var(--wfx-red, #ff5a36);
+	--wt-green:  var(--wfx-green, #16a06a);
+	--wt-amber:  var(--wfx-amber, #ffb300);
+	--wt-body:   var(--wfx-body, #3a352c);
+
+	display: grid;
+	grid-template-columns: repeat(var(--wt-cols, 3), 1fr);
+	gap: 28px;
+	margin: 28px 0;
+	max-width: 100%;
+}
+
+/* Make every element predictable inside any theme/Elementor container. */
+.wt-grid,
+.wt-grid * { box-sizing: border-box; }
+
+/* Grid/flex children won't shrink below their content unless min-width:0.
+   Without this, a long unbroken word forces the card wider than the screen. */
+.wt-card { min-width: 0; }
+.wt-name,
+.wt-role,
+.wt-bio,
+.wt-links a {
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+@media (max-width: 900px) {
+	.wt-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+@media (max-width: 600px) {
+	.wt-grid { grid-template-columns: 1fr; gap: 18px; }
+	/* Tame the hard shadow on small screens so it never adds scroll. */
+	.wt-card { box-shadow: 5px 5px 0 var(--wt-ink); }
+	.wt-card:hover { transform: none; box-shadow: 5px 5px 0 var(--wt-ink); }
+}
+
+/* ---- the brutalist card: square corners, thick border, hard shadow ---- */
+.wt-card {
+	background: var(--wt-cream);
+	border: 3px solid var(--wt-ink);
+	box-shadow: 6px 6px 0 var(--wt-ink);
+	border-radius: 0;                 /* brutalism = no rounding */
+	padding: 0 0 22px;
+	text-align: left;
+	transition: transform .12s ease, box-shadow .12s ease;
+}
+
+/* Lift-on-hover: the classic hard-shadow "pop". */
+.wt-card:hover {
+	transform: translate(-3px, -3px);
+	box-shadow: 9px 9px 0 var(--wt-ink);
+}
+
+/* ---- photo: square, framed, separated by a thick rule ---- */
+.wt-photo {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	margin: 0 0 16px;
+	border-bottom: 3px solid var(--wt-ink);
+	background: var(--wt-cream);
+	overflow: hidden;
+}
+
+.wt-photo .wt-img,
+.wt-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* Placeholder (no featured image) — uses the accent color of the card. */
+.wt-photo--empty {
+	background:
+		repeating-linear-gradient(45deg, transparent 0 14px, rgba(20,17,12,.06) 14px 28px),
+		var(--wt-cream);
+}
+
+/* ---- text ---- */
+.wt-name {
+	margin: 0 18px 4px;
+	font-family: 'Archivo', 'Space Grotesk', sans-serif;
+	font-weight: 900;
+	letter-spacing: -.02em;
+	font-size: 21px;
+	line-height: 1.1;
+	color: var(--wt-ink);
+}
+
+.wt-role {
+	margin: 0 18px 12px;
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	color: var(--wt-blue);
+}
+
+.wt-bio {
+	margin: 0 18px 14px;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: var(--wt-body);
+}
+
+/* ---- links: mono "chips" like the theme's nav CTA ---- */
+.wt-links {
+	margin: 0 18px;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.wt-links a {
+	font-family: 'Space Mono', monospace;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .04em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background: var(--wt-ink);
+	padding: 7px 12px;
+	border: 2px solid var(--wt-ink);
+	box-shadow: 3px 3px 0 var(--wt-ink);
+}
+
+.wt-links a:hover {
+	background: var(--wt-blue);
+}
+
+/* ---- rotate accent colors across cards (very neo-brutalist) ---- */
+.wt-card:nth-child(4n+1) .wt-role { color: var(--wt-blue); }
+.wt-card:nth-child(4n+2) .wt-role { color: var(--wt-red); }
+.wt-card:nth-child(4n+3) .wt-role { color: var(--wt-green); }
+.wt-card:nth-child(4n+4) .wt-role { color: var(--wt-amber); }
+
+.wt-card:nth-child(4n+1) .wt-photo--empty { background-color: var(--wt-blue); }
+.wt-card:nth-child(4n+2) .wt-photo--empty { background-color: var(--wt-red); }
+.wt-card:nth-child(4n+3) .wt-photo--empty { background-color: var(--wt-green); }
+.wt-card:nth-child(4n+4) .wt-photo--empty { background-color: var(--wt-amber); }
+
+/* ---- empty-state message in the brutalist frame ---- */
+.wt-empty {
+	font-family: 'Space Mono', monospace;
+	font-size: 14px;
+	padding: 16px;
+	background: var(--wfx-cream, #f3ede1);
+	border: 3px solid var(--wfx-ink, #14110c);
+	box-shadow: 4px 4px 0 var(--wfx-ink, #14110c);
+	color: var(--wfx-ink, #14110c);
+}

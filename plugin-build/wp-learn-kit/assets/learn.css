@@ -1,0 +1,67 @@
+/* ==========================================================================
+   WP Learn Kit — front-end styles (loaded via Subsystem 8: wp_enqueue_style)
+   These styles target the banner (Subsystem 4), the content note (Subsystem 5),
+   and the shortcode box (Subsystem 6).
+   ========================================================================== */
+
+/* Footer banner printed by the wp_footer action hook. */
+.wlk-banner {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 12px 16px;
+	background: #1d2327;   /* WordPress admin dark grey */
+	color: #fff;
+	font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	text-align: center;
+}
+
+.wlk-banner .wlk-dismiss {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	color: #fff;
+	border-radius: 4px;
+	width: 24px;
+	height: 24px;
+	line-height: 1;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.wlk-banner .wlk-dismiss:hover {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+/* The note appended to post/page content by the the_content filter. */
+.wlk-content-note {
+	border-left: 3px solid #2271b1;
+	padding: 8px 12px;
+	background: #f0f6fc;
+	color: #1d2327;
+}
+
+/* The box rendered by the [learn_box] shortcode. */
+.wlk-box {
+	border: 2px dashed #2271b1;
+	border-radius: 8px;
+	padding: 16px;
+	margin: 16px 0;
+	background: #f6f7f7;
+}
+
+.wlk-box-title {
+	display: block;
+	margin-bottom: 8px;
+	color: #2271b1;
+	font-size: 16px;
+}
+
+.wlk-box-body {
+	color: #1d2327;
+}
