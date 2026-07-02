@@ -1,10 +1,10 @@
 <?php
 /**
  * Blog index / archives / search — the "Posts page".
- * Renders posts as neo-brutalist cards in a grid, matching the WEBFIXUS design.
+ * Renders posts as neo-brutalist cards in a grid, matching the MONOLITH design.
  * (Also the fallback for category/tag/date archives and search results.)
  *
- * @package webfixus
+ * @package monolith
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -22,7 +22,7 @@ if ( is_search() ) {
 	$wfx_title  = wp_strip_all_tags( get_the_archive_title() );
 } else {
 	$wfx_posts_page = (int) get_option( 'page_for_posts' );
-	$wfx_kicker     = 'WEBFIXUS · WORDS';
+	$wfx_kicker     = 'MONOLITH · WORDS';
 	$wfx_title      = $wfx_posts_page ? get_the_title( $wfx_posts_page ) : 'The Journal';
 }
 ?>

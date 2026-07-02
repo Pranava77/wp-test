@@ -1,5 +1,5 @@
 /* ============================================================
-   WEBFIXUS — neo-brutalist design system
+   MONOLITH — neo-brutalist design system
    Loaded site-wide by the theme. The Elementor pages put their
    markup in HTML widgets that keep the prototype's inline styles
    for pixel fidelity; the classes below add the responsive
@@ -162,7 +162,7 @@ img, svg, video, iframe{ max-width:100%; height:auto; }
 /* ============================================================
    LOGO SLOT — size the uploaded custom-logo in the header + footer.
    (Uploaded via Appearance → Customize → Site Identity → Logo.
-   With no logo set, the "WEBFIXUS" wordmark shows as a fallback.)
+   With no logo set, the "MONOLITH" wordmark shows as a fallback.)
    ============================================================ */
 .wfx-logo--img{ display:inline-flex; align-items:center; }
 .wfx-header .custom-logo-link{ display:inline-flex; }
@@ -340,7 +340,7 @@ img, svg, video, iframe{ max-width:100%; height:auto; }
    ------------------------------------------------------------
    1) Scroll-reveal: top-level sections fade + rise into view.
       The hidden state lives on .wfx-reveal, which is added by JS
-      (webfixus-anim.js). If JS never runs, nothing is hidden, so the
+      (monolith-anim.js). If JS never runs, nothing is hidden, so the
       page can't go blank. Skipped in the Elementor editor and under
       reduced-motion; a 3s JS safety net reveals any leftovers.
    2) Hover micro-interactions on the brutalist elements.

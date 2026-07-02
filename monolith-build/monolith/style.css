@@ -1,0 +1,15 @@
+/*
+Theme Name: Monolith
+Theme URI: https://example.com/monolith
+Author: Your Studio
+Author URI: https://example.com
+Description: A self-contained neo-brutalist portfolio & agency theme. On activation it auto-creates Home, Work, About and Contact as Elementor-editable pages (classic Section/Column model — works with Flexbox Containers OFF). Bold ink borders, hard offset shadows, and a clean, editable layout. Includes a styled blog and contact form.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monolith
+*/
+
+/* Theme styling lives in assets/css/monolith.css (enqueued by functions.php). */
